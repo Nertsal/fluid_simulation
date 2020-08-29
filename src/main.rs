@@ -26,7 +26,7 @@ fn main() {
             let fluid_x = (mouse_x / draw::SCALE) as usize;
             let fluid_y = (mouse_y / draw::SCALE) as usize;
             fluid.add_dye(fluid_x, fluid_y, 10.0);
-            // fluid.add_velocity(fluid_x, fluid_y, 0.0, 1.0)
+            fluid.add_velocity(fluid_x, fluid_y, 0.0, 1.0)
         }
         window.draw_2d(&event, |c, g, _| {
             clear(BACK_COLOR, g);

@@ -1,4 +1,4 @@
-use crate::draw;
+use super::draw;
 
 pub struct Fluid {
     n: usize,
